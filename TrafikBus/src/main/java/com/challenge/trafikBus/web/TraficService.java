@@ -1,4 +1,4 @@
-package com.challenge.trafikBus.api;
+package com.challenge.trafikBus.web;
 
 
 import com.challenge.trafikBus.client.RestClient;

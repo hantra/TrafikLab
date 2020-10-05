@@ -1,4 +1,4 @@
-package com.challenge.trafikBus.api;
+package com.challenge.trafikBus.web;
 
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -12,6 +12,7 @@ import java.util.List;
 @Slf4j
 @RestController
 public class TraficController {
+
     @Autowired
     TraficService traficService;
 
@@ -19,7 +20,7 @@ public class TraficController {
     @GetMapping(value = "/topTen", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> collectCalculatedFinancialEstimateResult() throws Exception {
         log.info("get data");
-
+        System.out.println("restkontroller");
         traficService.getTopTenBuses();
         return ResponseEntity.ok().build();
     }

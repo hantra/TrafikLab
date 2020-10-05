@@ -24,7 +24,7 @@ public class RestClient {
 
     public void getTopTenBuses() {
 
-        String url = baseUrl + "model=jour&" + "key=" + apiKey;
+        String url = baseUrl;
 
         RestTemplate restTemplate = new RestTemplateBuilder()
                 .setConnectTimeout(Duration.ofSeconds(5))
